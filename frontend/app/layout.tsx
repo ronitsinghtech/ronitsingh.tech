@@ -8,7 +8,7 @@ const outfit = Outfit({
 
 export const metadata: Metadata = {
   title: "Ronit's Profile",
-  description: "Ronit's Directories",
+  description: "Ronit's personal profile, including his directory",
 };
 
 export default function RootLayout({
