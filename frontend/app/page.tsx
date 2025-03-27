@@ -1,4 +1,13 @@
+"use client";
 export default function home() {
+  function openDirectoryPage() {
+    window.open(
+      "https://dir.ronitsingh.tech",
+      "_blank",
+      "noopener, noreferrer"
+    );
+  }
+
   return (
     <>
       <section className="flex flex-col w-screen h-screen bg-black justify-center items-center">
@@ -6,8 +15,8 @@ export default function home() {
           <svg
             version="1.0"
             xmlns="http://www.w3.org/2000/svg"
-            width="300.000000pt"
-            height="225.000000pt"
+            width="25rem"
+            height="auto"
             viewBox="0 0 300.000000 225.000000"
             preserveAspectRatio="xMidYMid meet"
           >
@@ -111,6 +120,12 @@ m295 4 c3 -5 3 -10 -2 -10 -4 0 -82 -11 -173 -25 -149 -22 -182 -24 -169 -11
               <path d="M1943 1033 c9 -2 25 -2 35 0 9 3 1 5 -18 5 -19 0 -27 -2 -17 -5z" />
             </g>
           </svg>
+        </section>
+        <section
+          className="flex flex-row justify-center items-center w-auto bg-red-600 h-auto p-[1rem] rounded-[15px] cursor-pointer"
+          onClick={openDirectoryPage}
+        >
+          <p className="text-black">Explore Directories</p>
         </section>
       </section>
     </>
