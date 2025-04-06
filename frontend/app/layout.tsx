@@ -9,7 +9,9 @@ const outfit = Outfit({
 export const metadata: Metadata = {
   title: "Ronit's Tech",
   description: "Ronit's Technologies",
-  icons: "/favicon.svg",
+  icons: {
+    icon: "/RonitSinghTech_Logo.png",
+  },
 };
 
 export default function RootLayout({
